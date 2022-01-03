@@ -12,9 +12,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
   </head>
 
   <body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <div id="top-image">
       <img src="/images/top-image.svg" />
     </div>
@@ -24,6 +31,59 @@
     <div id="rocket-image">
       <img src="/images/rocket.svg" alt="rocket image" />
     </div>
+
+    <!--Modal -->
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Inscreva-se</h2>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <fieldset form="contato" name="input-contact">
+              <label for="nome">Nome completo:</label>
+              <br />
+              <input
+                name="nome"
+                id="nome"
+                type="text"
+                required
+                placeholder="Seu nome"
+              />
+              <br />
+              <br />
+              <label for="email">E-mail:</label>
+              <br />
+              <input
+                name="email"
+                id="email"
+                type="email"
+                required
+                placeholder="email@seudominio.com"
+              />
+              <br />
+              <br />
+
+              <input name="checkbox" id="checkbox" type="checkbox" />
+              <label for="checkbox">Aceito receber novidades por e-mail</label>
+              <br />
+              <br />
+              <button type="submit" form="contato">Enviar</button>
+              <br />
+            </fieldset>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-danger" data-dismiss="modal">
+              fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="content" class="container">
       <div id="ready-to-launch" class="containerElement1">
         <h1>READY TO LAUNCH IN...</h1>
@@ -33,9 +93,16 @@
       </div>
       <p>Inscreva-se para saber mais sobre o lançamento</p>
       <div id="box-subscribe" class="containerElement2">
-        <button id="button-subscribe" onclick="subscribe()">Inscreva-se</button>
+        <button
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#siteModal"
+        >
+          Inscreva-se
+        </button>
       </div>
     </div>
+
     <script src="/main.js"></script>
   </body>
 </html>

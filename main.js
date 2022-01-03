@@ -39,6 +39,3 @@ function updateTimer() {
 setInterval('updateTimer()', 1000)
 
 //Função do botão de inscrever-se
-function subscribe() {
-  window.alert('oi')
-}
