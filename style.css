@@ -35,6 +35,14 @@ body {
   opacity: 1;
 }
 
+#rocket-image {
+  position: absolute;
+  left: 40vw;
+  top: 20vh;
+  height: 345px;
+  width: 607px;
+}
+
 #countdown-function {
   font-size: 3em;
   font-weight: 100;
@@ -53,4 +61,21 @@ body {
 #countdown-function div {
   display: inline-block;
   margin: 15px;
+}
+
+.container {
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  color: white;
+  background-color: var(--purple);
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
 }

@@ -4,7 +4,7 @@ function updateTimer() {
   countdown.innerHTML = 'oi'
 
   //Colocar a data do lançamento
-  const countDownDate = new Date('Jan 1, 2022 00:00:01')
+  const countDownDate = new Date('Jan 15, 2022 00:00:01')
 
   //Atualizar o countdown a cada 1 segundos
   const now = new Date().getTime() //pegar data atual
